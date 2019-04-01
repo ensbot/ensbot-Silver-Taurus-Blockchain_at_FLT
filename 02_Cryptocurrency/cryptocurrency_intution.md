@@ -6,9 +6,9 @@ of funds, operating independently of a central bank. One such currency is `Bitco
 
 #### **What is Bitcoin?**
 _In crypto world there are three main layers:_
-    -> _Technology_: Blockchain (Modue-1)
-    -> _Protocol (Coin)_: Bitcoin, Ethereum, Neo, Waves, Ripple, etc. (Module-2 : current)
-    -> _Token_: Smart Contracts (Module-3)
+    * _Technology_: Blockchain (Modue-1)
+    * _Protocol (Coin)_: Bitcoin, Ethereum, Neo, Waves, Ripple, etc. (Module-2 : current)
+    * _Token_: Smart Contracts (Module-3)
 
 Bitcoin is about taking the blockchain technology form theory to practice so that a network of people can transact with each other.
 So, these people don't need to have any intermediate between them and they don't need to trust a third party as they can trust the
