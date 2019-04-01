@@ -3,6 +3,7 @@
 A digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer 
 of funds, operating independently of a central bank. One such currency is `Bitcoin`.
 
+<br>
 
 #### **What is Bitcoin?**
 _In crypto world there are three main layers:_
@@ -22,6 +23,7 @@ _The Bitcoin Ecosystem:_
 - _Large Mines_
 - _Mining Pools_
     
+<br>    
 
 #### **Bitcoin's Monetary Policy**
 - **Halving**
@@ -31,7 +33,8 @@ _The Bitcoin Ecosystem:_
     to replace block rewardsbut this dependes on the market.
 - **Block Frequency**
     This is how often those blocks come in which got rewards. So, it really depends on the design of the system.
-        
+    
+<br>
         
 #### **Understanding Mining Difficulty**
 - **What is the Current Target and how does that feel?**
@@ -48,6 +51,7 @@ _The Bitcoin Ecosystem:_
         
     > Difficulty = current target / max target
         
+<br>
 
 #### **Mining Pools**
 What Mining Pool does is that, it distributes some power from the large mines among the small systems which adds up in their
@@ -60,21 +64,22 @@ their hashing power making the tradeoff applicable.
 So, we can contribute in solving the cryptographic puzzle by using a mining rig and the necessary software to connect the hash
 power of our rig with any of the mining pool. 
 
+<br>
 
 #### **Nonce Range**
 Since we know that Nonce is the only field in the block that the miner can change in order to get the hash under the target limit.
 But there is limit to the value of Nonce can hold. Since, Nonce is 32-bit number (precisely, 32-bit unsigned integer) and hence
 it can anywhere between 0 and approx. 4 billion.
 
- > Let's do some estimations:
- _Difficulty_
- Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77
- Total valid hashes (with 18 leading zeros) = 16*16*...16 = 16^(64-18) = 2 * 10^55
- Probability that a random picked hash is valid = 2 * 10^55 / 20^77 = 2 * 10^(-22)
- _Nonce_
- Max Nonce = 2^32 = 4 * 10^9
- Assuming no collision, this means 4 * 10^9 different hashes.
- Probability that one of them will be valid = 4 * 10^9 * 2 * 10^(-22) = 8 * 10^(-13) = 10^(-12) = 0.0000000001%
+ > Let's do some estimations: <br>
+ #####_Difficulty_ <br>
+ Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77 <br>
+ Total valid hashes (with 18 leading zeros) = 16*16*...16 = 16^(64-18) = 2 * 10^55 <br>
+ Probability that a random picked hash is valid = 2 * 10^55 / 20^77 = 2 * 10^(-22) <br>
+ #####_Nonce_ <br>
+ Max Nonce = 2^32 = 4 * 10^9 <br>
+ Assuming no collision, this means 4 * 10^9 different hashes. <br>
+ Probability that one of them will be valid = 4 * 10^9 * 2 * 10^(-22) = 8 * 10^(-13) = 10^(-12) = 0.0000000001% <br>
 
 _Conclusion: One Nonce range is not enough_
 
@@ -96,6 +101,7 @@ billion, 2 to 3 billion and 3 to 4 billion to different systems for different ti
 So, for a larger mining pool (having a power of 22 million trillion hashes per sec) can traverse the full Nonce range at a particular
 timestamp in just few milliseconds. So, what will it do for rest of the milliseconds until the timestamp updates.
 
+<br>
 
 #### **How Miners pick their Transactions**
 Since we know that adding a new block in the blockchain requires some time. But we do tansactions all the time. So what happens is
@@ -113,6 +119,7 @@ that same timestamp for the Nonce range (reseted). Once the 1 second gets comple
 transaction will get changed back it's value to the originally choosen value.
 So, if the fees is too low that your transaction can get stucked up in the MEMPOOL and get revert back to you after sometime.
 
+<br>
 
 #### **CPUs vs GPUs vs ASICs**
  > CPU = Central Processing Unit -- Genral -- less than 10MH/s
@@ -128,6 +135,7 @@ But ASIC is only used with the Protocols (Coin) which uses the SHA-256 cryptogra
 configuration to make it usable for other types of Cryptocurrencies. But so far, there is no configuration or implementation similar
 to ASIC for Ethereum as it is memory heavy. So GPUs are there for Ethereum.
 
+<br>
 
 #### **How do Mempools work?**
 As we know there is Mempool attached to every participant (node or miner) in the network and as it is peer-2-peer distributed network
@@ -137,6 +145,7 @@ that transaction is geniune and then they relayed down that information across t
 the network will get that transaction in it's mempool. So there can be generally more than 9000 or 10000 transactions sitting in the
 mempool out of which upto 2000 can be there in the block for the mining process depending on the size of the transaction.
 
+<br>
 
 #### **Orphaned Blocks**
 In case of the problem when more than miner found the answer for the puzzle but cannot be realyed due to time gap. Then the one block
@@ -146,6 +155,7 @@ to be attached after your mined block to ensure that, there will be no problem o
 problem or otherwise they can reach on a situation where the goods are sold and the transaction they got gets reverted. This problem
 is known as `Double Spend Problem`. The Miner whose block is to be accepted is based on more than 50 percent majority basis.
 
+<br>
 
 #### **The 51% Attack**
 It's a hypothetical attack but it could possibly happen and it is commonly feared and discussed. The 51% attack is not an individual
@@ -165,6 +175,7 @@ blockchain and can purchase the goods from their transactions as a node, so that
 will gonna get reject and the node gets the profit which is infact a member of other miner's gorup and hence the other miner's group
 will gonna have double profit while the original miner's group will gonna face double loss (termed as `Double Spend Problem`).  
 
+<br>
 
 #### **Deriving the current target**
 Say for example we have bitcoin block. Indside of that we do not have directly have a `target` field but a `bits` field. So we gonna
@@ -174,4 +185,3 @@ Then, we assume the value in bytes, as 23 bytes = 23 * 8 bits = 23 * 2 * 4 bits 
 of length 46 hex digits. In this 46 hex digits the starting digits will be the rest of the digits of hex-bit-value and the 0s. The
 rest of the values that are left out of 64 hex digits (i.e., 18 hex digits) will be considered as our 0s from the start to the value
 which makes our target value.
-                        
