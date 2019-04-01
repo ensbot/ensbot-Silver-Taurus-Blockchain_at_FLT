@@ -6,9 +6,10 @@ of funds, operating independently of a central bank. One such currency is `Bitco
 
 #### **What is Bitcoin?**
 _In crypto world there are three main layers:_
-    * _Technology_: Blockchain (Modue-1)
-    * _Protocol (Coin)_: Bitcoin, Ethereum, Neo, Waves, Ripple, etc. (Module-2 : current)
-    * _Token_: Smart Contracts (Module-3)
+
+    - _Technology_: Blockchain (Modue-1)
+    - _Protocol (Coin)_: Bitcoin, Ethereum, Neo, Waves, Ripple, etc. (Module-2 : current)
+    - _Token_: Smart Contracts (Module-3)
 
 Bitcoin is about taking the blockchain technology form theory to practice so that a network of people can transact with each other.
 So, these people don't need to have any intermediate between them and they don't need to trust a third party as they can trust the
@@ -17,6 +18,7 @@ of transacing is exchange of values. Also there can be other uses of blockchain 
 protocols.
 
 _The Bitcoin Ecosystem:_
+
     - _Nodes_ (refers to the devices or participants which are not mining in the network but only want to transact)
     - _Miners_
     - _Large Mines_
@@ -24,6 +26,7 @@ _The Bitcoin Ecosystem:_
     
 
 #### **Bitcoin's Monetary Policy**
+
     - **Halving**
         This principle states that, the number of bitcoins per block released into the system is halved once every four year. And 
         the important point is that this monetary policy of bitcoin is entirely under the control of the algorithm that is in the
@@ -34,6 +37,7 @@ _The Bitcoin Ecosystem:_
         
         
 #### **Understanding Mining Difficulty**
+
     - **What is the Current Target and how does that feel?**
         As we have previously selected the Target as four-leading-zeros which reduces the pool size by one-fourth. As we are in a
         hexadecimal system, so for every leading zero the pool size reduces by one-sixteenth.
@@ -116,8 +120,10 @@ So, if the fees is too low that your transaction can get stucked up in the MEMPO
 
 #### **CPUs vs GPUs vs ASICs**
  > CPU = Central Processing Unit -- Genral -- less than 10MH/s
- GPU = Graphics Processing Unit -- Specialized -- less than 1GH/s
- ASIC = Application-Specific Integrated Circuit -- Totally Specialized -- more than 1000GH/s
+ 
+ > GPU = Graphics Processing Unit -- Specialized -- less than 1GH/s
+ 
+ > ASIC = Application-Specific Integrated Circuit -- Totally Specialized -- more than 1000GH/s
  
 In a ASIC the calculations are done on a logical level but rather on physcial level and hence is totally specialized for solving the
 SHA-256 cryptographic puzzle.
