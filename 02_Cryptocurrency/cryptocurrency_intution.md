@@ -6,10 +6,9 @@ of funds, operating independently of a central bank. One such currency is `Bitco
 
 #### **What is Bitcoin?**
 _In crypto world there are three main layers:_
-
-- _Technology_: Blockchain (Modue-1)    
-- _Protocol (Coin)_: Bitcoin, Ethereum, Neo, Waves, Ripple, etc. (Module-2 : current)
--_Token_: Smart Contracts (Module-3)
+- _Technology_ : Blockchain (Modue-1)    
+- _Protocol (Coin)_ : Bitcoin, Ethereum, Neo, Waves, Ripple, etc. (Module-2 : current)
+- _Token_ : Smart Contracts (Module-3)
 
 Bitcoin is about taking the blockchain technology form theory to practice so that a network of people can transact with each other.
 So, these people don't need to have any intermediate between them and they don't need to trust a third party as they can trust the
@@ -18,39 +17,36 @@ of transacing is exchange of values. Also there can be other uses of blockchain 
 protocols.
 
 _The Bitcoin Ecosystem:_
-
-    - _Nodes_ (refers to the devices or participants which are not mining in the network but only want to transact)
-    - _Miners_
-    - _Large Mines_
-    - _Mining Pools_
+- _Nodes_ (refers to the devices or participants which are not mining in the network but only want to transact)
+- _Miners_
+- _Large Mines_
+- _Mining Pools_
     
 
 #### **Bitcoin's Monetary Policy**
-
-    - **Halving**
-        This principle states that, the number of bitcoins per block released into the system is halved once every four year. And 
-        the important point is that this monetary policy of bitcoin is entirely under the control of the algorithm that is in the
-        bitcoin system software. So, after a certain time the reqard will be close to 0 and hence the transaction fees are meant
-        to replace block rewardsbut this dependes on the market.
-    - **Block Frequency**
-        This is how often those blocks come in which got rewards. So, it really depends on the design of the system.
+- **Halving**
+    This principle states that, the number of bitcoins per block released into the system is halved once every four year. And 
+    the important point is that this monetary policy of bitcoin is entirely under the control of the algorithm that is in the
+    bitcoin system software. So, after a certain time the reqard will be close to 0 and hence the transaction fees are meant
+    to replace block rewardsbut this dependes on the market.
+- **Block Frequency**
+    This is how often those blocks come in which got rewards. So, it really depends on the design of the system.
         
         
 #### **Understanding Mining Difficulty**
-
-    - **What is the Current Target and how does that feel?**
-        As we have previously selected the Target as four-leading-zeros which reduces the pool size by one-fourth. As we are in a
-        hexadecimal system, so for every leading zero the pool size reduces by one-sixteenth.
+- **What is the Current Target and how does that feel?**
+    As we have previously selected the Target as four-leading-zeros which reduces the pool size by one-fourth. As we are in a
+    hexadecimal system, so for every leading zero the pool size reduces by one-sixteenth.
         
-        > Let's do some estimations (Probabilty):
-        Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77
-        Total valid hashes (with 4 leading zeros) = 16*16*...16 = 16^(64-4) = 2 * 10^72
-        Probability that a random picked hash is valid = 2 * 10^72 / 20^77 = 2 * 10^(-5) = 0.002%
+    > Let's do some estimations (Probabilty):
+    Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77
+    Total valid hashes (with 4 leading zeros) = 16*16*...16 = 16^(64-4) = 2 * 10^72
+    Probability that a random picked hash is valid = 2 * 10^72 / 20^77 = 2 * 10^(-5) = 0.002%
         
-    - **How is "Mining Difficulty" calculated?**
-        Difficulty is adjusted every 2016 blocks (2 weeks). This is done by changing the number of leading zeros.
+- **How is "Mining Difficulty" calculated?**
+    Difficulty is adjusted every 2016 blocks (2 weeks). This is done by changing the number of leading zeros.
         
-        > Difficulty = current target / max target
+    > Difficulty = current target / max target
         
 
 #### **Mining Pools**
