@@ -38,10 +38,10 @@ _The Bitcoin Ecosystem:_
     As we have previously selected the Target as four-leading-zeros which reduces the pool size by one-fourth. As we are in a
     hexadecimal system, so for every leading zero the pool size reduces by one-sixteenth.
         
-    > Let's do some estimations (Probabilty):
-    Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77
-    Total valid hashes (with 4 leading zeros) = 16*16*...16 = 16^(64-4) = 2 * 10^72
-    Probability that a random picked hash is valid = 2 * 10^72 / 20^77 = 2 * 10^(-5) = 0.002%
+    > Let's do some estimations (Probabilty):<br>
+    Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77 <br>
+    Total valid hashes (with 4 leading zeros) = 16*16*...16 = 16^(64-4) = 2 * 10^72 <br>
+    Probability that a random picked hash is valid = 2 * 10^72 / 20^77 = 2 * 10^(-5) = 0.002% <br>
         
 - **How is "Mining Difficulty" calculated?**
     Difficulty is adjusted every 2016 blocks (2 weeks). This is done by changing the number of leading zeros.
