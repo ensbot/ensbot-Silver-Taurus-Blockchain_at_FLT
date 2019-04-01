@@ -95,8 +95,8 @@ This helps in dealing with the protocol when and how to add a new block to the b
 towards that. While choosing the protocol we have to keep in mind the following challenges: 
 - _Attackers_
 - _Competing Chains_   
-<br>
-`Proof of Work protocol` <br>
+
+--- Proof of Work protocol --- <br>
 This is nothing but the concept, that the miner has done the work in finding the golden nonce and hence mining the block in the chain.
 This can be any operation that will be done and then hashed which will then be checked with our target condition.
 
