@@ -96,7 +96,7 @@ towards that. While choosing the protocol we have to keep in mind the following 
 - _Attackers_
 - _Competing Chains_   
 <br>
-_Proof of Work protocol_ <br>
+`Proof of Work protocol` <br>
 This is nothing but the concept, that the miner has done the work in finding the golden nonce and hence mining the block in the chain.
 This can be any operation that will be done and then hashed which will then be checked with our target condition.
 
