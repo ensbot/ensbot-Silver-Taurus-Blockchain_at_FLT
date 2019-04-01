@@ -72,11 +72,11 @@ But there is limit to the value of Nonce can hold. Since, Nonce is 32-bit number
 it can anywhere between 0 and approx. 4 billion.
 
  > Let's do some estimations: <br>
- #####_Difficulty_ <br>
+ --- _Difficulty_ --- <br>
  Total possible 64-digit hexadecimal numbers = 16*16*...16 = 16^64 = 10^77 <br>
  Total valid hashes (with 18 leading zeros) = 16*16*...16 = 16^(64-18) = 2 * 10^55 <br>
  Probability that a random picked hash is valid = 2 * 10^55 / 20^77 = 2 * 10^(-22) <br>
- #####_Nonce_ <br>
+ --- _Nonce_ --- <br>
  Max Nonce = 2^32 = 4 * 10^9 <br>
  Assuming no collision, this means 4 * 10^9 different hashes. <br>
  Probability that one of them will be valid = 4 * 10^9 * 2 * 10^(-22) = 8 * 10^(-13) = 10^(-12) = 0.0000000001% <br>
