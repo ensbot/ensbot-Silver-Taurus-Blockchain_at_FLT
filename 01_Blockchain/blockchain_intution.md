@@ -4,14 +4,15 @@
 A blockchain is a continuously growing list of records, called blocks, which are linekd and secured using cryptography.
 
 _A block contains of:_
-    - _Data_
-    - _Prev. Hash_
-    - _Hash_
+- _Data_
+- _Prev. Hash_
+- _Hash_
 
 In a blockchain, the first element is called the `Genesis Block`. Now, since each block has its own fingerprint and its
 previous block's fingerprint. If any data inside the block is changed the fingerprints will also change and the link breaks
 which will show us that the chain is tampered.
 
+<br>
 
 #### **Hashing Cryptography (SHA 256)**
     - As we know that for any person the fingerprints are their way of identification. As, every person has different fingerprints.
@@ -24,12 +25,13 @@ which will show us that the chain is tampered.
     - With a slight change in the data the hash will change completly (`Avalanche Effect`).
 
 _The 5 requirements for Hash algorithms:_
-    - _One-Way_
-    - _Deterministic_
-    - _Fast Computation_
-    - _Avalanche effect_
-    - _Must withstand collisions_
+- _One-Way_
+- _Deterministic_
+- _Fast Computation_
+- _Avalanche effect_
+- _Must withstand collisions_
 
+<br>
 
 #### **Immutable Ledger**
 Whenever a new data entry comes in the blockchain it comes at the end of the blockchain and gets attached to the chain via
@@ -40,6 +42,7 @@ tampered will now be connected to more new blocks, so we are then gonna modify a
 one node will break the chain (or link) making the chain inaccesible. Due to this effect the data cannot be tampered and
 hence is immutable.
 
+<br>
 
 #### **Distributed P2P Network**
 Now, what happens if the in between block gets changed accidentally or due to some internal errors, we will detect the error
@@ -57,54 +60,57 @@ Hence, in this case of blockchain the hacker cannot attack one blockchain, but i
 to do the computation of changing the data of a block and then updating other block adjoining it in single blockhain and then a
 majority of blockchains on that network is also being needed to update at the same time in order to hack-modify the data.
 
+<br>
 
 #### **How Mining Works?**
-    - A block in a blockchain have a couple of fields. Say, at the top it has block-number, data, previous hash and hash. Other than
-      this, there is also a field called `NONCE` (Number used only ONCE). We use the block-number, Nonce, data, previous-hash and puts
-      them in the hashing algorithm and gets out current hash. Now, what mining is all about is the nonce. As we enter some data and
-      gets the hash, then we put some nonce and we gets new hash, which we cannot control but we can vary the hash by varying the nonce.
-      Also just incrementing the value by one changes the hash dramatically due to avalanche effect.
-    - A Hash is a number in a hexadecimal format of length 64 but in decimal it is much longer since hexadecimal can store higher values
-      than the deciaml. So, let us consider all the possible hashes from 000... in the smalled to fff... in the largest, like a map then
-      from the given hashes, we are going to see that where the hash is going to be located in the collection of all possible hashes.
-    - So how Mining works is, in essence, the blockchain system (or algorithm) sets a target for minors to accomplish a certain hash. And
-      the way it works is that, any hash for your block that is above the target doesn't count. In order to be include in the blockchain
-      it has to be below the target and the reason to do that is just to create hurdles for miner to found the hash-number. So when the hash
-      is below the target then you are consider as the miner who mines the block. Since the block-number, data and previous-hash cannot be
-      changed, the only factor used to change the hash values is nonce. The miner has to find a nonce for which the hash is below the target
-      and hence we can finally add the block in the blockchain. (This nonce sometimes also be referred as golden nonce). So, the minors have
-      to brute-force the nonce value after hours and hours of computer time for finding the correct nonce.
+- A block in a blockchain have a couple of fields. Say, at the top it has block-number, data, previous hash and hash. Other than
+  this, there is also a field called `NONCE` (Number used only ONCE). We use the block-number, Nonce, data, previous-hash and puts
+  them in the hashing algorithm and gets out current hash. Now, what mining is all about is the nonce. As we enter some data and
+  gets the hash, then we put some nonce and we gets new hash, which we cannot control but we can vary the hash by varying the nonce.
+  Also just incrementing the value by one changes the hash dramatically due to avalanche effect.
+- A Hash is a number in a hexadecimal format of length 64 but in decimal it is much longer since hexadecimal can store higher values
+  than the deciaml. So, let us consider all the possible hashes from 000... in the smalled to fff... in the largest, like a map then
+  from the given hashes, we are going to see that where the hash is going to be located in the collection of all possible hashes.
+- So how Mining works is, in essence, the blockchain system (or algorithm) sets a target for minors to accomplish a certain hash. And
+  the way it works is that, any hash for your block that is above the target doesn't count. In order to be include in the blockchain
+  it has to be below the target and the reason to do that is just to create hurdles for miner to found the hash-number. So when the hash
+  is below the target then you are consider as the miner who mines the block. Since the block-number, data and previous-hash cannot be
+  changed, the only factor used to change the hash values is nonce. The miner has to find a nonce for which the hash is below the target
+  and hence we can finally add the block in the blockchain. (This nonce sometimes also be referred as golden nonce). So, the minors have
+  to brute-force the nonce value after hours and hours of computer time for finding the correct nonce.
 
+<br>
 
 #### **Byzantine Fault Tolerance**
 This is the algorithm of deciding the action to be taken to avoid chaos when the decision is to be taken between the multiple persons.
 In this the action having the majority is to be taken which avoids getting the chaos even if someone amongs those persons want. The
 Byzantine problem itself is much complex than what it's solution looks like. This helps the persons to come at a consensus. But at the
-same time their is a tolerance limit, that out of total persons (or peers) in a connection (or network) how many of them can be a traitor,
-crossing that limit will no longer let the chaos to be avoidable.
+same time their is a tolerance limit, that out of total persons (or peers) in a connection (or network) how many of them can be a 
+traitor,crossing that limit will no longer let the chaos to be avoidable.
 
+<br>
 
 #### **Consensus Protocol**
-This helps in dealing with the protocol when and how to add a new block to the blockchain and how every member in the network contributes
+This helps in dealing with the protocol when and how to add a new block to the blockchain and how every member in the network contribute
 towards that. While choosing the protocol we have to keep in mind the following challenges: 
-    - _Attackers_
-    - _Competing Chains_   
+- _Attackers_
+- _Competing Chains_   
 
-**`Proof of Work` protocol**
+--- Proof of Work protocol --- <br>
 This is nothing but the concept, that the miner has done the work in finding the golden nonce and hence mining the block in the chain.
 This can be any operation that will be done and then hashed which will then be checked with our target condition.
 
 Solutions for the challenges:
-    - For this mining, the miner gots the reward which lets the miner play fair, because if they add a malicious block then, they will not 
-      get the rewards (or in other words they are going to be penalize). Whether or not the block is malicious is checked via series of
-      rigrous checks and after that it is decided whether to accept or reject the block.
-    - When we get the competing chains (two chains are having different blocks to be added in such a way that one block is added before it can
-      get udated), so we are going to wait for both the chains to get the another block, and as soon as one chain exceeds the other we will
-      gonna follow the lead of the longest chain and hence all the blockchain on the network gets updated. While the two chains were in the
-      conflicting state, the other chain also updates themselves for time being, on the basis of which updation reaches them faster. Also the
-      more the number of supporting peers a peer (who has a competing chain) hash the higher will be it's hashing power and hence, will be more
-      likely to get a new block first (or you can say that, among the competing chains the one having more the 50% of the hash computing power
-      will win. The block that will gonna remove after all the blockchains are updated are called orphaned blocks and the reward for those blocks
-      will be no longer valid.
+- For this mining, the miner gots the reward which lets the miner play fair, because if they add a malicious block then, they will 
+  not get the rewards (or in other words they are going to be penalize). Whether or not the block is malicious is checked via series of
+   rigrous checks and after that it is decided whether to accept or reject the block.
+- When we get the competing chains (two chains are having different blocks to be added in such a way that one block is added before it 
+  can get updated, so we are going to wait for both the chains to get the another block, and as soon as one chain exceeds the other we 
+  will gonna follow the lead of the longest chain and hence all the blockchain on the network gets updated. While the two chains were in 
+  the conflicting state, the other chain also updates themselves for time being, on the basis of which updation reaches them faster. 
+  Also the more the number of supporting peers a peer (who has a competing chain) hash the higher will be it's hashing power and hence, 
+  will be more likely to get a new block first (or you can say that, among the competing chains the one having more the 50% of the hash 
+  computing power will win. The block that will gonna remove after all the blockchains are updated are called orphaned blocks and the 
+  reward for those block will be no longer valid.
 
 So, the Consensus Protocol in Blockchain is much more powerfull than of the algortihm for the Byzantine Problem.
