@@ -53,3 +53,4 @@ contract coin_ico {
 }
 
 // Get the byte code using --> remix solidity ide (online)
+// use the ganache for blockchain visualisation.
